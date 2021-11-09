@@ -11,5 +11,6 @@ Currently the following maps are available:
 
 This folder contains the configuration files for the F1TENTH car in the SVL Simulator.
 Those sensor configurations mainly differ in the types of sensors that are integrated.
+All sensor publish corresponding ROS2 messages and can therefore displayed over the LGSVL-ROS2 bridge.
 Currently the following configurations are available:
 * F1TENTH: This and original replica of the F1TENTH's vehicle real sensor configuration hardware.
