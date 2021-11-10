@@ -21,17 +21,19 @@ sim.load(scene = "781b04c8-43b4-431e-af55-1ae2b2efc873", seed = 650387)         
 sim.reset()
 spawns = sim.get_spawn()
 
-# Load the vehicle and spawn it on the track
+# Load the EGO vehicle and spawn it on the track
 state = lgsvl.AgentState()
 state.transform = spawns[0]
 ego = sim.add_agent(name = "3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea", agent_type = lgsvl.AgentType.EGO, state = None)
+
+# Load an NPC and spawn it on the track
+#npc = sim.add_agent(name = "F1Tenth", agent_type =lgsvl.AgentType.NPC, state = None)
+
 
 # Set a new daytime for the simulator, Time of day can be set from 0 ... 24
 print("Current time:", sim.time_of_day)
 sim.set_time_of_day(19.8)
 print(sim.time_of_day)
-
-
 
 # Create Steps for running the simulation step by step
 step_time = 0.1
@@ -64,7 +66,7 @@ for i in range(steps):
 
     # Drive in a circle
 
-    c.throttle = 1.0
+    c.throttle = 0.0
     c.steering = 0.001
     # a True in apply_control means the control will be continuously applied ("sticky"). False means the control will be applied for 1 frame
     ego.apply_control(c, True)
