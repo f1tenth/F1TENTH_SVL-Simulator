@@ -1,0 +1,535 @@
+[
+  {
+    "name": "Keyboard Control Sensor",
+    "parent": null,
+    "pluginId": "a2ff904a-ff06-4f06-9e45-cb58217a7142",
+    "sortKey": 0,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "a2ff904a-ff06-4f06-9e45-cb58217a7142",
+      "name": "Keyboard Control Sensor",
+      "type": "KeyboardControlSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor is required for a vehicle to accept keyboard control commands. Parameters are not required.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#keyboard-control for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/990aa76e-ecc4-4404-a4fe-7e6736b39082",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "KeyboardControlSensor"
+  },
+  {
+    "params": {
+      "Topic": "/imu",
+      "Frame": "imu"
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.117,
+      "z": 0.245,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "IMU Data",
+    "parent": null,
+    "pluginId": "9c34ec28-627d-4e73-9bb0-9c2aa7e978f5",
+    "sortKey": 1,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "9c34ec28-627d-4e73-9bb0-9c2aa7e978f5",
+      "name": "IMU Sensor",
+      "type": "ImuSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor output at a fixed rate of 100 Hz. IMU publishes data on topics where the 2nd topic has corrected IMU data.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#imu for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/cf06a7ce-85d0-4edd-a1e1-ca11992800c2",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "ImuSensor"
+  },
+  {
+    "params": {
+      "Frequency": 50,
+      "Topic": "/can_bus",
+      "Frame": "base_link"
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.069,
+      "z": 0.115,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "CAN Bus Data",
+    "parent": null,
+    "pluginId": "b0bdc474-ac09-4355-901d-d7012a8c57a8",
+    "sortKey": 2,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "b0bdc474-ac09-4355-901d-d7012a8c57a8",
+      "name": "CAN Bus Sensor",
+      "type": "CanBusSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor sends data about the vehicle chassis. The data includes:\n\t* Speed [m/s]\n\t* Throttle [%]\n\t* Braking [%]\n\t* Steering [+/- %]\n\t* Parking Brake Status [bool]\n\t* High Beam Status [bool]\n\t* Low Beam Status [bool]\n\t* Hazard Light Status [bool]\n\t* Fog Light Status [bool]\n\t* Left Turn Signal Status [bool]\n\t* Right Turn Signal Status [bool]\n\t* Wiper Status [bool]\n\t* Reverse Gear Status [bool]\n\t* Selected Gear [Int]\n\t* Engine Status [bool]\n\t* Engine RPM [RPM]\n\t* GPS Latitude [Latitude]\n\t* GPS Longitude [Longitude]\n\t* Altitude [m]\n\t* Orientation [3D Vector of Euler angles]\n\t* Velocity [3D Vector of m/s]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#can-bus for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/cd38d045-4374-4cf4-a62b-8bfba1128a39",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "CanBusSensor"
+  },
+  {
+    "params": {
+      "Topic": "/odom",
+      "Frame": "gnss",
+      "Frequency": 50
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.117,
+      "z": 0.245,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "GPS Sensor",
+    "parent": null,
+    "pluginId": "483f7b90-2f76-42ee-82c1-22f02f25f924",
+    "sortKey": 3,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "483f7b90-2f76-42ee-82c1-22f02f25f924",
+      "name": "GPS Odometry Sensor",
+      "type": "GpsOdometrySensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor outputs the GPS location of the vehicle in Longitude/Latitude and Northing/Easting coordintates and the vehicle velocity.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#gps-odometry for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/d672c52e-0e1a-494e-a95c-fc52593a119d",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "GpsOdometrySensor"
+  },
+  {
+    "params": {
+      "Topic": "/vehicle_odometry",
+      "Frame": "base_link"
+    },
+    "name": "Vehicle Odometry",
+    "parent": null,
+    "pluginId": "662072f8-8123-4e18-9b45-ee801e0bc020",
+    "sortKey": 4,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "662072f8-8123-4e18-9b45-ee801e0bc020",
+      "name": "Vehicle Odometry Sensor",
+      "type": "VehicleOdometrySensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "Example sensor for vehicle odometry information.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/48d73849-b580-4d95-b09b-a888b8034a4a",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "VehicleOdometrySensor"
+  },
+  {
+    "params": {
+      "CenterAngle": 0,
+      "Frame": "lidar_front",
+      "Topic": "/scan",
+      "RotationFrequency": 30,
+      "MaxDistance": 100,
+      "MeasurementsPerRotation": 1080,
+      "VerticalRayAngles": [
+        -25,
+        -1,
+        -1.667,
+        -15.639,
+        -11.31,
+        0,
+        -0.667,
+        -8.843,
+        -7.254,
+        0.333,
+        -0.333,
+        -6.148,
+        -5.333,
+        1.333,
+        0.667,
+        -4,
+        -4.667,
+        1.667,
+        1,
+        -3.667,
+        -3.333,
+        3.333,
+        2.333,
+        -2.667,
+        -3,
+        7,
+        4.667,
+        -2.333,
+        -2,
+        15,
+        10.333,
+        -1.333
+      ]
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.165,
+      "z": 0.35,
+      "pitch": 0,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "Lidar Sensor",
+    "parent": null,
+    "pluginId": "b30d0478-8c7b-4687-bfc2-b3cdb3f5faff",
+    "sortKey": 5,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "b30d0478-8c7b-4687-bfc2-b3cdb3f5faff",
+      "name": "Lidar Sensor",
+      "type": "LidarSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor returns a point cloud after 1 revolution.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#lidar for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/dd44a969-c038-4966-a39f-a445ab3b6c00",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "LidarSensor"
+  },
+  {
+    "params": {
+      "Frequency": 30,
+      "Topic": "/image"
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.12,
+      "z": 0.365,
+      "pitch": 4,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "Color Camera Sensor",
+    "parent": null,
+    "pluginId": "3d4f1e08-4c62-4e9f-b859-b26d4910b85e",
+    "sortKey": 6,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "3d4f1e08-4c62-4e9f-b859-b26d4910b85e",
+      "name": "Color Camera Sensor",
+      "type": "ColorCameraSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This is the type of sensor that would be used for the Main Camera in Apollo.\nColor Camera also has multiple post processing sensor effects that can be added to the Postprocessing field in params. Effects can be combined with an array of Postprocessing fields but order is hard coded.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#color-camera for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/f9073a10-2920-4ba8-863c-93faa7c6496a",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "ColorCameraSensor"
+  },
+  {
+    "params": {
+      "Frequency": 30,
+      "Topic": "/depth_image"
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.12,
+      "z": 0.365,
+      "pitch": 4,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "Depth Camera Sensor",
+    "parent": null,
+    "pluginId": "290af702-b42a-4dce-800e-0999a07d49d2",
+    "sortKey": 7,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "290af702-b42a-4dce-800e-0999a07d49d2",
+      "name": "Depth Camera Sensor",
+      "type": "DepthCameraSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor returns an image where the shades on the grey-scale correspond to the depth of objects.\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#depth-camera for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/e3d6ad23-d82a-43ce-ac91-2b629a0ad80f",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "DepthCameraSensor"
+  },
+  {
+    "params": {
+      "Frequency": 30,
+      "Topic": "/segmentation_image"
+    },
+    "transform": {
+      "x": 0,
+      "y": 0.12,
+      "z": 0.365,
+      "pitch": 4,
+      "yaw": 0,
+      "roll": 0
+    },
+    "name": "Segmentation Camera Sensor",
+    "parent": null,
+    "pluginId": "dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
+    "sortKey": 8,
+    "plugin": {
+      "isFavored": true,
+      "isShared": false,
+      "isOwned": false,
+      "accessInfo": {
+        "userAccessType": "favored",
+        "owner": {
+          "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+          "firstName": "SVL",
+          "lastName": "Content"
+        }
+      },
+      "supportedSimulatorVersions": [
+        "2021.3",
+        "2021.2",
+        "2021.2.2",
+        "2021.2.1",
+        "2021.1",
+        "2021.1.1"
+      ],
+      "id": "dbd171ab-66bc-4c7a-a523-d4e72afe1d0f",
+      "name": "Segmentation Camera Sensor",
+      "type": "SegmentationCameraSensor",
+      "category": "sensor",
+      "ownerId": "0d888b00-fa53-47c1-882a-b68391268a11",
+      "accessType": "public",
+      "description": "This sensor returns an image where objects are colored corresponding to their tag. Example of Instance Segmentation Tags. Be aware that this effects performance greatly.\n\t\"InstanceSegmentationTags\": [\n\t\t\"Car\",\n\t\t\"Pedestrian\",\n\t\t\"Obstacle\",\n\t\t\"Building\"\n\t]\nSee https://www.svlsimulator.com/docs/simulation-content/sensors-list/#segmentation-camera for more details.",
+      "copyright": "LG Electronics Inc.",
+      "licenseName": "LG Content",
+      "imageUrl": "/api/v1/assets/download/preview/37402ea8-7073-40dd-983f-3aaf855421c1",
+      "status": "active",
+      "owner": {
+        "id": "0d888b00-fa53-47c1-882a-b68391268a11",
+        "firstName": "SVL",
+        "lastName": "Content"
+      },
+      "shareRequests": []
+    },
+    "type": "SegmentationCameraSensor"
+  }
+]

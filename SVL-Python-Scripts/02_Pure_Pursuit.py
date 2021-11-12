@@ -244,26 +244,29 @@ spawns = sim.get_spawn()
 # Load the EGO vehicle and spawn it on the track
 state = lgsvl.AgentState()
 state.transform = spawns[0]
-ego = sim.add_agent(name = "3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea", agent_type = lgsvl.AgentType.EGO, state = None)
+ego = sim.add_agent(name = "3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea", agent_type = lgsvl.AgentType.EGO, state = None)     # Vehicle Configut WITHOUT sensors
+#ego = sim.add_agent(name = "47e2ebcd-2b67-4d5b-934a-0621c35d8823", agent_type = lgsvl.AgentType.EGO, state = None)      # Vehicle Configut WITH sensors
+
+# Load the Sensors of the vehicle
+sensors = ego.get_sensors()
+
 
 # Load an NPC and spawn it on the track
 # npc = sim.add_agent("3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea", agent_type =lgsvl.AgentType.EGO, state = None)
 
 
 # Set a new daytime for the simulator, Time of day can be set from 0 ... 24
-print("Current time:", sim.time_of_day)
-sim.set_time_of_day(19.8)
-print(sim.time_of_day)
+print("Current Day time in Simulation:", sim.time_of_day)
+sim.set_time_of_day(11.8)
+
 
 # The simulator can be run for a set amount of time.
 # time_limit is optional and if omitted or set to 0, then the simulator will run indefinitely
 # Create Steps for running the simulation step by step
-step_time = 0.1
-duration = 100
-
-
+step_time = 0.1                     # Simulation Timestep in s
+duration = 100                      # Duration of Simulation in s
 step_rate = int(1.0 / step_time)
-steps = duration * step_rate
+steps = duration * step_rate        # Calculate total of time steps
 print("Stepping forward for {} steps of {}s per step" .format(steps, step_time))
 
 
@@ -287,6 +290,10 @@ c = lgsvl.VehicleControl()
 lookahead_distance= 1.7
 vgain = 1.05
 lap_counter = 0
+
+# Providing Time Measurements: Real Time and Simulation Time
+t0 = time.time()
+current_sim_time = sim.current_time
 
 for i in range(steps):
 
@@ -326,3 +333,9 @@ for i in range(steps):
 
     # a True in apply_control means the control will be continuously applied ("sticky"). False means the control will be applied for 1 frame
     ego.apply_control(c, True)
+
+
+
+t1 = time.time()
+print("Real time elapsed =", t1 - t0)
+print("Simulation time elapsed =", sim.current_time - current_sim_time)

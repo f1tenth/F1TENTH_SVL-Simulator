@@ -252,7 +252,7 @@ ego2 = sim.add_agent("3bb4c2eb-82d3-4ee3-8ebb-2bdbcf6e88ea", agent_type =lgsvl.A
 
 # Set a new daytime for the simulator, Time of day can be set from 0 ... 24
 print("Current time:", sim.time_of_day)
-sim.set_time_of_day(19.8)
+sim.set_time_of_day(11.8)
 print(sim.time_of_day)
 
 # The simulator can be run for a set amount of time.
