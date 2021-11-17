@@ -26,3 +26,17 @@ This folder contains Python scripts that connects to the SVL Python API. This ba
 
 # ROS2 Packages
 This folder contains ROS2 packages that connects to the SVL ROS2 bridge. This basic RO2 packages include basic autonomous functionalities like object detection, localization, path planning and control to run the car fast around the racetrack in the SVL simulator.
+
+
+# References
+For this repository we are using the theoretical foundations, images and code from the following papers. If you find our work useful in your research, please consider citing:
+
+* J. Betz, A. Wischnewski, A. Heilmeier, F. Nobis, T. Stahl, L. Hermansdorfer, B. Lohmann, M. Lienkamp "What we can learn from autonomous racing",2018, Springer [(PDF)](https://www.researchgate.net/publication/327892743_What_can_we_learn_from_autonomous_level-5_motorsport_chassistech_plus)
+
+* T. Stahl, A. Wischnewski, J. Betz, and M. Lienkamp,
+“Multilayer Graph-Based Trajectory Planning for Race Vehicles in Dynamic Scenarios,”
+in 2019 IEEE Intelligent Transportation Systems Conference (ITSC), Oct. 2019, pp. 3149–3154. [(PDF)](https://arxiv.org/pdf/2005.08664>`)
+
+* A. Heilmeier, A. Wischnewski, L. Hermansdorfer, J. Betz, M. Lienkamp, B. Lohmann\
+"Minimum Curvature Trajectory Planning and Control for an Autonomous Racecar" Vehicle System Dynamics, vol. 58, no. 10, pp. 1497–1527, Jun. 2019,
+[(PDF)](https://www.tandfonline.com/doi/abs/10.1080/00423114.2019.1631455?journalCode=nvsd20)
