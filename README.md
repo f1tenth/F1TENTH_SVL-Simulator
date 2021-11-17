@@ -10,14 +10,16 @@ Currently the following maps are available:
 
 
 # Sensor Configurations
-
-This folder contains the configuration files for the F1TENTH car in the SVL Simulator.
-Those sensor configurations mainly differ in the types of sensors that are integrated.
+This folder contains the sensor configuration files for the F1TENTH car in the SVL Simulator.
+Those sensor configurations mainly differ in the types of sensors that are incoperated in those.
 All sensor publish corresponding ROS2 messages and can therefore displayed over the LGSVL-ROS2 bridge.
 Currently the following configurations are available:
-* **F1TENTH**: This and original replica of the F1TENTH's vehicle real sensor configuration hardware.
+* **F1TENTH**: This an original replica of the F1TENTH's vehicle real sensor configuration hardware.
 * **F1TENTH Big Vehicle**: This the F1TENTH vehicle with equipped with 3D Lidar, GPS
 
 # Python Scripts
+This folder contains Python scripts that connects to the SVL Python API. This basic scripts give an idea on how to run basic functionalities e.g. spawn vehicles and change the daytime. In addition we integrated basic autonomous racing path planners and controllers to run the car fast around the racetrack in the SVL simulator.
+* **F1TENTH**:
 
 # ROS2 Packages
+This folder contains ROS2 packages that connects to the SVL ROS2 bridge. This basic RO2 packages include basic autonomous functionalities like object detection, localization, path planning and control to run the car fast around the racetrack in the SVL simulator.
