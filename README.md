@@ -14,8 +14,8 @@ This folder contains the sensor configuration files for the F1TENTH car in the S
 Those sensor configurations mainly differ in the types of sensors that are incoperated in those.
 All sensor publish corresponding ROS2 messages and can therefore displayed over the LGSVL-ROS2 bridge.
 Currently the following configurations are available:
-* **F1TENTH**: This an original replica of the F1TENTH's vehicle real sensor configuration hardware.
-* **F1TENTH Big Vehicle**: This the F1TENTH vehicle with equipped with 3D Lidar, GPS
+* **F1TENTH**: This an original replica of the F1TENTH's vehicle real sensor configuration hardware. This consists of: 2D Lidar (Hokuyo UST0-10lx), Stereocamera (Intel Realsense D435i), IMU
+* **F1TENTH Big Vehicle**: This the F1TENTH vehicle equipped with sensor for big scale (1:1) vehicles.  This consists of: 3D Lidar (Velodyne VLP-32), Stereocamera, GPS, IMU, CAN-BUS
 
 # Python Scripts
 This folder contains Python scripts that connects to the SVL Python API. This basic scripts give an idea on how to run basic functionalities e.g. spawn vehicles and change the daytime. In addition we integrated basic autonomous racing path planners and controllers to run the car fast around the racetrack in the SVL simulator.
