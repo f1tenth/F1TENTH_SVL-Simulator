@@ -19,7 +19,10 @@ Currently the following configurations are available:
 
 # Python Scripts
 This folder contains Python scripts that connects to the SVL Python API. This basic scripts give an idea on how to run basic functionalities e.g. spawn vehicles and change the daytime. In addition we integrated basic autonomous racing path planners and controllers to run the car fast around the racetrack in the SVL simulator.
-* **F1TENTH**:
+* **01_Spawn_and_drive.py**: This script gives a basic explanation on how to connect to the SVL Simulator, load a specific map and then spawn the F1TENTH vehicle.
+* **02_Pure_Pursuit.py**: This script is running the Pure Pursuit control algorithm to follow an optimal raceline around the racetrack.
+* **03_Multi_Ego.py**: This script is showing on how to spawn two F1TENTH vehicles as ego vehicles and sent control commands to the simulator
+* **04_Camera_Access.py**: This script is accessing the sensors on the F1TENTH vehicle and is saving the image afterwards.
 
 # ROS2 Packages
 This folder contains ROS2 packages that connects to the SVL ROS2 bridge. This basic RO2 packages include basic autonomous functionalities like object detection, localization, path planning and control to run the car fast around the racetrack in the SVL simulator.
